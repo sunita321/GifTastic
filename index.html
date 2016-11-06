@@ -1,0 +1,37 @@
+<html>
+<head>
+	<title>Giphtastic App</title>
+	<style type="text/css">
+		button, div, form, input {
+			margin: 10px;
+		}
+	</style>
+	<!-- add link to the jQuery Library -->
+	<script src='http://code.jquery.com/jquery-2.1.3.min.js'></script>
+</head>
+<body>
+
+<div class="container">
+	<h1>Giphy Search</h1>
+
+	<!-- Rendered Buttons will get Dumped Here  -->
+	<div id="buttonsView"></div>
+
+	<form id="giphyForm">
+		<label for="giphyInput">Add a Category</label>
+		<input type="text" id="giphyInput"><br>
+
+		<!-- Button triggers new celebrity to be added -->
+		<input id="addGif" type="submit" value="Add Category">
+	</form>
+
+
+	<!-- Celebrities go here-->
+	<div id="gifView"></div>
+</div>
+
+
+<!-- Link to the javascript app -->
+	<script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
+</html>
