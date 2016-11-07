@@ -27,16 +27,34 @@ $(document).ready(function()
 				var stillImage = response.data[i].images.fixed_height_still.url;
 				console.log(stillImage);
 
-				var rating = response.data[i].rating;
+				var playImage = response.data[i].images.fixed_height_downsampled.url;
+				console.log("Moving"+ playImage);
 
-				console.log(rating);
+				//var rating = response.data[i].rating;
+
+				//console.log(rating);
 				var image = $("<img>").attr("src", stillImage);
 
 				topicDiv.append(image);
 
 				// Puts the entire topic above the previous celebrities.
 				$('#gifView').append(topicDiv);
-			}
+
+				//Click image causes gif to play
+
+				image.addClass('play'); // Added a class to image tag
+
+				// This function handles events where one button is clicked
+				//$('.play').on('click', function()
+				//{
+					//var playImage = response.data[i].images.fixed_height_small_url;
+					//console.log("Moving" + showMoving);
+
+					//var image = $("<img>").attr("src", playImage);
+
+
+				//})
+			}	
 		});
 	}
 
