@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Spicy+Rice');
+
+h1 {
+	font-family: 'Spicy Rice', cursive;
+	font-size: 50px;
+
+}
+
+.topicButton{
+	margin: 5px;
+}
+
+body{
+  background: url('../images/gplaypattern.png')
+
+}
+
+#topicInput{
+	margin-bottom: 5px;
+}
+
+#addTopic{
+	margin-bottom: 20px;
+}

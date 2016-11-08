@@ -16,8 +16,9 @@ $(document).ready(function()
 			// Dynamically generate buttons for each topic in the array
 
 			// jQUery syntax here... 
-			var a = $('<button>') // This code $('<button>') is all jQuery needs to create the beginning and end tag. (<button></button>)
+			var a = $('<button type="button">') // This code $('<button>') is all jQuery needs to create the beginning and end tag. (<button></button>)
 			a.addClass('topicButton'); // Added a class 
+			a.addClass('btn btn-primary'); // Added a class 
 			a.attr('data-name', topics[i]); // Added a data-attribute
 			a.text(topics[i]); // Provided the initial button text
 			$('#topicsView').append(a); // Added the button to the HTML

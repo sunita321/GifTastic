@@ -1,36 +1,61 @@
 <html>
 <head>
 	<title>Giphtastic App</title>
-	<style type="text/css">
-		button, div, form, input {
-			margin: 10px;
-		}
-	</style>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<!-- Custom CSS stylesheet -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
 	<!-- add link to the jQuery Library -->
 	<script src='http://code.jquery.com/jquery-2.1.3.min.js'></script>
 </head>
 <body>
 
-<div class="container">
+
+<div class="container-fluid">
+
+
 	<h1>Giphtastic Giphy Search</h1>
 
-
+	
 	<!-- Rendered Buttons will get Dumped Here  -->
+
 	<div id="topicsView"></div>
-
+	
+	
+	
 	<form id="topicForm">
-		<label for="topicInput">Add a Topic</label>
-		<input type="text" id="topicInput"><br>
+		 <div class="form-group">
+		 	<div class="row">
+			 	<div class="col-xs-4">
+					<label for="topicInput">Add a Topic to the buttons above</label>
 
-		<!-- Button triggers new celebrity to be added -->
-		<input id="addTopic" type="submit" value="Add a Topic">
+					<form >
+					<input type="text" id="topicInput" class="form-control" placeholder="Enter topic to add button" required>
+
+					<!-- Button triggers new topic to be added -->
+					<input id="addTopic" type="submit" value="Submit">
+					</form>
+				</div>
+			</div>
+
+		</div>
+
+		
+	
 	</form>
 
 
 	<!-- Gifs go here-->
 	<div id="gifView"></div>
 
-</div>
+	</div>
+
+
 
 
 <!-- Link to the javascript app -->
