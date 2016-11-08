@@ -3,6 +3,7 @@
 h1 {
 	font-family: 'Spicy Rice', cursive;
 	font-size: 50px;
+	margin-bottom: 10px;
 
 }
 
@@ -22,3 +23,8 @@ body{
 #addTopic{
 	margin-bottom: 20px;
 }
+
+p{
+	font-size: 20px;
+}
+
