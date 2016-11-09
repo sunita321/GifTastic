@@ -70,7 +70,7 @@ $(document).ready(function()
 				var stillImage = response.data[i].images.fixed_height_still.url;
 				console.log(stillImage);
 
-				var playImage = response.data[i].images.fixed_height_downsampled.url;
+				var playImage = response.data[i].images.fixed_height.url;
 				console.log("Moving"+ playImage);
 
 				var rating = response.data[i].rating;
