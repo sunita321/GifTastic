@@ -11,4 +11,4 @@ This is a Trivia game using JavaScript for the logic and jQuery to manipulate HT
   * If the player runs out of time, the player is told time's up and the correct answer is displayed. Wait a few seconds, then the next question shown.
   * If the player chooses the wrong answer, the player told they selected the wrong option and then the correct answer is displayed. Wait a few seconds, then the next question is shown.
 
-* On the final screen, the number of correct answers, incorrect answers, and an option to restart the game is shown. (without reloading the page).
+* On the final screen, the number of correct answers, incorrect answers, and an option to restart the game is shown (without reloading the page).
